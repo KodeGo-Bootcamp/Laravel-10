@@ -30,7 +30,7 @@
             <div>
                 <h1>Snippy Blog</h1>
             </div>
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
                 <div><strong>50</strong> Post</div>
                 <div><strong>20k</strong> Followers</div>
                 <div><strong>100k</strong> Following</div>
