@@ -28,7 +28,8 @@
         </div>
         <div class="col-9">
             <div>
-                <h1>Snippy Blog</h1>
+                <!-- <h1>Snippy Blog</h1> -->
+                <h1>{{$user->username}}</h1>
             </div>
             <div class="d-flex align-items-center gap-3">
                 <div><strong>50</strong> Post</div>

@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('/weather',function() {
+    return response()->json([
+        'message'=>'This is just a sample custom api',
+        'name'=>'waren',
+        'hobby'=>'react coding',
+        'age'=>'26',
+        'status'=>200
+    ]);
 });
