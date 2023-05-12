@@ -36,9 +36,9 @@
                 <div><strong>20k</strong> Followers</div>
                 <div><strong>100k</strong> Following</div>
             </div>
-            <div class="pt-2"><p>@test_user<p></div>
-            <div class=""><p>I love laravel and I just want to explore more of it.</p></div>
-            <div class=""><a target="_blank" href="https://renstrio24p.github.io/Mini-Project-Porfolio/" class="">Renstrio Page</a></div>
+            <div class="pt-2"><p>{{$user->profile->title}}<p></div>
+            <div class=""><p>{{$user->profile->description}}</p></div>
+            <div class=""><a target="_blank" href="https://renstrio24p.github.io/Mini-Project-Porfolio/" class="">{{$user->profile->url}}</a></div>
         </div>
     </div>
 </div>

@@ -13,7 +13,6 @@ class ProfilesController extends Controller
             'home',
         [
             'user'=>$user,
-            
         ]
     );
     }
