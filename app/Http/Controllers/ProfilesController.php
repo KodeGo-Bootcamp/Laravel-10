@@ -10,7 +10,7 @@ class ProfilesController extends Controller
     public function index($user){
         $user = User::findORfail($user);
         return view(
-            'home',
+            'profiles.index',
         [
             'user'=>$user
         ]

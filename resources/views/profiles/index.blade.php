@@ -27,8 +27,9 @@
             <img class="rounded-circle" src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"  alt="a dog" style="height: 10em" />
         </div>
         <div class="col-9">
-            <div>
+            <div class="d-flex align-items-center">
                 <!-- <h1>Snippy Blog</h1> -->
+                <a href="#0" class="btn btn-primary p-1" style="margin: 0 20px 0 0"> New Post </a>
                 <h1>{{$user->username}}</h1>
             </div>
             <div class="d-flex align-items-center gap-3">
