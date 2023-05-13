@@ -15,7 +15,7 @@
                         type="text" 
                         class="form-control @error('caption') is-invalid @enderror" 
                         name="caption" value="{{ old('caption') }}" 
-                        required autocomplete="caption" 
+                         autocomplete="caption" 
                         autofocus>
                                     
                     @error('caption')
@@ -34,7 +34,7 @@
                      type="file" 
                      class="form-control @error('image') is-invalid @enderror" 
                      name="image" value="{{ old('image') }}" 
-                     required autocomplete="image" 
+                     autocomplete="image" 
                      autofocus>
     
                     @error('image')
