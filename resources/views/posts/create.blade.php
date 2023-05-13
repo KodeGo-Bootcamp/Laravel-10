@@ -3,7 +3,8 @@
 @section('content')
 
 <div class="container">
-    <form action="/p" method="POST" enctype="multipart/form-data"> 
+    <form action="/p" method="post" enctype="multipart/form-data">
+        @csrf 
      <div class="row">
         <div class="row mb-3">
             <label for="caption" class="col-md-4 col-form-label text-md-end">Posts Caption</label>
