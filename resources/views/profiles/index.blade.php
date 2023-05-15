@@ -40,6 +40,15 @@
             <div class="pt-2"><p>{{$user->profile->title}}<p></div>
             <div class=""><p>{{$user->profile->description}}</p></div>
             <div class=""><a target="_blank" href="https://renstrio24p.github.io/Mini-Project-Porfolio/" class="">{{$user->profile->url}}</a></div>
+            <div class="row">
+                @foreach($user->posts as $post)
+                <div class="col-4 p-3"><img class="w-100" src="{{$post->image}}" alt=""></div>
+                @endforeach
+                <!--  Add 3 divs and nest them together with a single div (8:31pm)  -->
+                <!-- <div class="col-4 p-3"><img class="w-100" src="https://source.unsplash.com/1600x900/?cat" alt=""></div>
+                <div class="col-4 p-3"><img class="w-100" src="https://source.unsplash.com/1600x900/?cat" alt=""></div>
+                <div class="col-4 p-3"><img class="w-100" src="https://source.unsplash.com/1600x900/?cat" alt=""></div> -->
+            </div>
         </div>
     </div>
 </div>

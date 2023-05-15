@@ -27,12 +27,17 @@ class PostsController extends Controller
         // $post->caption = $data['caption'];
         // $post->save();
 
-        dd(request('image')->store('uploads','public'));
+        // Storage link path for public folder (5/15/2023 : 8:12PM)
+        $imagePath = request('image')->store('uploads','public');
 
-        auth()->user()->posts()->create($data);
+        // For us to be able to access the image path (8:17pm)
+        auth()->user()->posts()->create([
+            'caption'=>$data['caption'],
+            'image'=>$imagePath,
+        ]);
 
-        // \App\Models\Post::create($data);
+        // Redirection to a different routes (8:17pm)
+        return redirect('/profile/'. auth()->user()->id);
 
-        dd(request()->all());
     }
 }
