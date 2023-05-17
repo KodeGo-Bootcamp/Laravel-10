@@ -28,6 +28,9 @@ class PostsController extends Controller
         // $post->save();
 
         // Storage link path for public folder (5/15/2023 : 8:12PM)
+
+        // Solved using public_path helper
+        // $imagePath = request('image')->store(public_path('uploads'),'public');
         $imagePath = request('image')->store('uploads','public');
 
         // For us to be able to access the image path (8:17pm)
