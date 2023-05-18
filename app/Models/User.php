@@ -47,6 +47,7 @@ class User extends Authenticatable
 
     public function posts()
     {
+        // created 8:09pm 18/05/2023
         return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
     }
 
