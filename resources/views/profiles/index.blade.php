@@ -33,7 +33,7 @@
                 <h1>{{$user->username}}</h1>
             </div>
             <div class="d-flex align-items-center gap-3">
-                <div><strong>50</strong> Post</div>
+                <div><strong>{{$user->posts->count()}}</strong> Post</div>
                 <div><strong>20k</strong> Followers</div>
                 <div><strong>100k</strong> Following</div>
             </div>

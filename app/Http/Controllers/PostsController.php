@@ -26,7 +26,7 @@ class PostsController extends Controller
             'image' => ['required', 'image'],
         ]);
 
-        \App\Models\Post::create($data);
+        // \App\Models\Post::create($data);
 
         // $post = new \App\Models\Post();
         // $post->caption = $data['caption'];
@@ -42,15 +42,14 @@ class PostsController extends Controller
 
         auth()->user()->posts()->create($data);
 
+        auth()->user()->posts()->create([
+            'caption' => $data['caption'],
+            'image' => $imagePath,
+        ]);
 
-        // auth()->user()->posts()->create([
-        //     'caption' => $data['caption'],
-        //     'image' => $imagePath,
-        // ]);
+        // Redirection to a different routes (8:17pm)
+        return redirect('/profile/'.auth()->user()->id);
 
-        // // Redirection to a different routes (8:17pm)
-        // return redirect('/profile/'.auth()->user()->id);
-
-        dd(request()->all());
+        // dd(request()->all());
     }
 }
